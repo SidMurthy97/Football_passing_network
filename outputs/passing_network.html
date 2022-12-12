@@ -96,7 +96,7 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "PICKFORD", "label": "PICKFORD", "physics": false, "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "STONES", "label": "STONES", "physics": false, "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "RICE", "label": "RICE", "physics": false, "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "WALKER", "label": "WALKER", "physics": false, "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "MAGUIRE", "label": "MAGUIRE", "physics": false, "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "SHAW", "label": "SHAW", "physics": false, "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "FODEN", "label": "FODEN", "physics": false, "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "KANE", "label": "KANE", "physics": false, "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "HENDERSON", "label": "HENDERSON", "physics": false, "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "SAKA", "label": "SAKA", "physics": false, "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "BELLINGHAM", "label": "BELLINGHAM", "physics": false, "shape": "dot", "size": 10}]);
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "PICKFORD", "label": "PICKFORD", "physics": false, "shape": "dot", "size": 50}, {"color": "#97c2fc", "id": "STONES", "label": "STONES", "physics": false, "shape": "dot", "size": 50}, {"color": "#97c2fc", "id": "RICE", "label": "RICE", "physics": false, "shape": "dot", "size": 50}, {"color": "#97c2fc", "id": "WALKER", "label": "WALKER", "physics": false, "shape": "dot", "size": 50}, {"color": "#97c2fc", "id": "MAGUIRE", "label": "MAGUIRE", "physics": false, "shape": "dot", "size": 50}, {"color": "#97c2fc", "id": "SHAW", "label": "SHAW", "physics": false, "shape": "dot", "size": 50}, {"color": "#97c2fc", "id": "FODEN", "label": "FODEN", "physics": false, "shape": "dot", "size": 50}, {"color": "#97c2fc", "id": "KANE", "label": "KANE", "physics": false, "shape": "dot", "size": 50}, {"color": "#97c2fc", "id": "HENDERSON", "label": "HENDERSON", "physics": false, "shape": "dot", "size": 50}, {"color": "#97c2fc", "id": "SAKA", "label": "SAKA", "physics": false, "shape": "dot", "size": 50}, {"color": "#97c2fc", "id": "BELLINGHAM", "label": "BELLINGHAM", "physics": false, "shape": "dot", "size": 50}]);
                   edges = new vis.DataSet([{"arrows": "to", "from": "PICKFORD", "to": "STONES", "value": 45.71, "width": 1}, {"arrows": "to", "from": "PICKFORD", "to": "RICE", "value": 17.14, "width": 1}, {"arrows": "to", "from": "STONES", "to": "WALKER", "value": 24.66, "width": 1}, {"arrows": "to", "from": "STONES", "to": "MAGUIRE", "value": 23.29, "width": 1}, {"arrows": "to", "from": "RICE", "to": "STONES", "value": 27.27, "width": 1}, {"arrows": "to", "from": "RICE", "to": "WALKER", "value": 20.45, "width": 1}, {"arrows": "to", "from": "WALKER", "to": "STONES", "value": 30.0, "width": 1}, {"arrows": "to", "from": "WALKER", "to": "MAGUIRE", "value": 16.0, "width": 1}, {"arrows": "to", "from": "MAGUIRE", "to": "SHAW", "value": 28.57, "width": 1}, {"arrows": "to", "from": "MAGUIRE", "to": "STONES", "value": 19.64, "width": 1}, {"arrows": "to", "from": "SHAW", "to": "MAGUIRE", "value": 30.95, "width": 1}, {"arrows": "to", "from": "SHAW", "to": "FODEN", "value": 26.19, "width": 1}, {"arrows": "to", "from": "FODEN", "to": "KANE", "value": 33.33, "width": 1}, {"arrows": "to", "from": "FODEN", "to": "SHAW", "value": 29.17, "width": 1}, {"arrows": "to", "from": "HENDERSON", "to": "WALKER", "value": 29.41, "width": 1}, {"arrows": "to", "from": "HENDERSON", "to": "STONES", "value": 26.47, "width": 1}, {"arrows": "to", "from": "KANE", "to": "HENDERSON", "value": 25.0, "width": 1}, {"arrows": "to", "from": "KANE", "to": "FODEN", "value": 18.75, "width": 1}, {"arrows": "to", "from": "SAKA", "to": "WALKER", "value": 38.1, "width": 1}, {"arrows": "to", "from": "SAKA", "to": "HENDERSON", "value": 14.29, "width": 1}, {"arrows": "to", "from": "BELLINGHAM", "to": "MAGUIRE", "value": 29.63, "width": 1}, {"arrows": "to", "from": "BELLINGHAM", "to": "SHAW", "value": 11.11, "width": 1}]);
 
                   nodeColors = {};
@@ -131,6 +131,15 @@
     },
     "physics": {
         "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.01,
+            "damping": 0.4,
+            "gravitationalConstant": -50,
+            "springConstant": 0.08,
+            "springLength": 100
+        },
+        "solver": "forceAtlas2Based",
         "stabilization": {
             "enabled": true,
             "fit": true,
