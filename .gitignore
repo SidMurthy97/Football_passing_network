@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 outputs/*.PNG
+outputs/visualising_passing_networks.jpg
