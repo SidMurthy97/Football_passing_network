@@ -10,5 +10,5 @@ Unfortunately, the data was published in PDF format - which is essentially where
 
 
 # Results
-!["vs France"](outputs/vs_france_2_edges.png)
-!["Vs Senegal](outputs/vs_senegal_2_edges.png)
+!["vs France"](outputs/vs_france_2_edges.jpg)
+!["Vs Senegal](outputs/vs_senegal_2_edges.jpg)
