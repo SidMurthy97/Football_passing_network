@@ -17,11 +17,16 @@ In the context of the questions I was interested in it was not required to map e
 
 
 # Results :checkered_flag:
-## Fixture against France
+
+Vs Senegal             |  Vs France
+:-------------------------:|:-------------------------:
+![](outputs/vs_senegal_2_edges.jpg)  |  ![](outputs/vs_france_2_edges.jpg)
+
+<!-- ## Fixture against France
 !["vs France"](outputs/vs_france_2_edges.jpg)
 
 ## Fixture against Senegal
-!["Vs Senegal](outputs/vs_senegal_2_edges.jpg)
+!["Vs Senegal](outputs/vs_senegal_2_edges.jpg) -->
 
 # Insights :dart:
 
